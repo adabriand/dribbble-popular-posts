@@ -4,12 +4,27 @@
   "description": "An alternative viewer for the popular shots on Dribbble.",
   "main": "index.js",
   "scripts": {
+    "postinstall": "bower install && gulp dist",
     "start": "node index.js"
   },
   "dependencies": {
+    "gulp": "~3.9.1",
+    "gulp-shell": "~0.5.2",
+    "gulp-sass": "~2.3.2",
+    "gulp-rename": "~1.2.2",
+    "gulp-concat": "~2.6.0",
+    "gulp-uglify": "~1.5.4",
+    "gulp-inject": "~4.1.0",
+    "gulp-clean-css": "~2.0.10",
+    "require-dir": "~0.3.0",
+    "gulp-angular-filesort": "~1.1.1",
+    "gulp-jasmine": "~2.4.0",
+    "gulp-jshint": "~2.0.1",
+    "karma": "~0.13.22",
     "express": "4.13.3",
     "bluebird": "~3.4.1",
-    "wiredep": "~4.0.0"
+    "wiredep": "~4.0.0",
+    "bower": "^1.7.9"
   },
   "engines": {
     "node": "0.12.7"
@@ -19,24 +34,12 @@
     "url": "https://github.com/adabriand/dribbble-popular-posts"
   },
   "devDependencies": {
-    "gulp": "~3.9.1",
-    "gulp-shell": "~0.5.2",
-    "gulp-sass": "~2.3.2",
-    "gulp-jasmine": "~2.4.0",
     "jasmine-core": "~2.4.1",
     "karma-jasmine": "~1.0.2",
     "karma-spec-reporter": "0.0.26",
-    "karma": "~0.13.22",
     "phantomjs-prebuilt": "~2.1.7",
     "karma-phantomjs-launcher": "~1.0.0",
-    "jshint": "~2.9.2",
-    "gulp-jshint": "~2.0.1",
-    "gulp-rename": "~1.2.2",
-    "gulp-concat": "~2.6.0",
-    "gulp-uglify": "~1.5.4",
-    "gulp-inject": "~4.1.0",
-    "gulp-clean-css": "~2.0.10",
-    "require-dir": "~0.3.0",
-    "gulp-angular-filesort": "~1.1.1"
+    "jshint": "~2.9.2"
   }
 }
+
