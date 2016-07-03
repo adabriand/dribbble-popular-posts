@@ -12,8 +12,10 @@ To *run* Dribbble Popular Posts, you only need
 
 Installation
 ------------------------------
-* Install the dependencies: `npm install` and `bower install`
-* Run the web server: `gulp start`
+1. Install the dependencies:
+  1. `bower install`
+  2. `npm install`
+2. Run the web server: `gulp start`
 * If you want to change the default values for hostname `localhost` and port `3000`, you need to set up the environment variables - `HOST` and `PORT`.
 
 Main Gulp Commands
