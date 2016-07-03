@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'UniversLTStd47LightCondensed';
+  src: url("../fonts/universltstd-lightcn-webfont.svg"); }
+
+body {
+  font-family: "UniversLTStd47LightCondensed", Helvetica, Arial, sans-serif;
+  background: rgba(47, 47, 47, 0.98);
+  color: #ffffff; }

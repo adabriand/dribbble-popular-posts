@@ -1,0 +1,30 @@
+{
+  "name": "dribbble-popular-posts",
+  "description": "An alternative viewer for the popular shots on Dribbble.",
+  "main": "index.js",
+  "authors": [
+    "Adabriand Furtado <adabriand@gmail.com>"
+  ],
+  "license": "GPLv3",
+  "homepage": "https://github.com/adabriand/dribbble-popular-posts",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "angular": "^1.5.7"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/js/bootstrap.js",
+        "dist/css/bootstrap.css",
+        "less/bootstrap.less"
+      ]
+    }
+  }
+}
