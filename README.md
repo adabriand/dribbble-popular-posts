@@ -1,13 +1,13 @@
 [![Build
-Status](https://travis-ci.org/adabriand/dribbble-popular-posts.svg?branch=master)](https://travis-ci.org/adabriand/dribbble-popular-posts)
-Dribbble Popular Posts
+Status](https://travis-ci.org/adabriand/dribbble-popular-shots.svg?branch=master)](https://travis-ci.org/adabriand/dribbble-popular-shots)
+Dribbble Popular Shots
 ==============================
 
-Dribbble Popular Posts is a web application that allows users to view the most popular shots on Dribbble.
+[Dribbble Popular Shots](https://db-popular-shots.herokuapp.com/) is a web application that allows users to view the most popular shots on Dribbble.
 
 Requirements
 ------------------------------
-To *run* Dribbble Popular Posts, you only need
+To *run* Dribbble Popular Shots, you only need
 * Node.js (v0.10.25 or above)
 * Bower (v1.7.9 or above)
 * Gulp (v3.9.1 or above)

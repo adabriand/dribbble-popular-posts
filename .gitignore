@@ -70,3 +70,6 @@ node_modules/
 
 # Bower components
 bower_components/
+
+# Compiled index page
+frontend/src/index.html

@@ -1,8 +1,65 @@
+header {
+  position: fixed;
+  background: rgba(47, 47, 47, 0.98);
+  width: 100%;
+  z-index: 9999; }
+  header .title-container {
+    text-align: center; }
+    header .title-container .title {
+      margin: 10px 0px 10px 0; }
+      header .title-container .title a {
+        color: #ffffff;
+        font-size: 30px;
+        letter-spacing: 0cm;
+        font-weight: bold;
+        text-decoration: none; }
+
+shots .container {
+  padding-top: 65px; }
+shots .shot-container {
+  padding: 10px;
+  margin-bottom: 15px;
+  background: #fff;
+  display: inline-block;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07); }
+  shots .shot-container .shot img {
+    max-width: 100%; }
+  shots .shot-container .status {
+    margin-top: 10px; }
+    shots .shot-container .status li {
+      float: right;
+      width: auto;
+      margin: 0 0 0 15px;
+      display: inline;
+      line-height: 1;
+      color: #aaa; }
+      shots .shot-container .status li .count {
+        font-size: 18px; }
+      shots .shot-container .status li .icon-container {
+        font-size: 12px;
+        padding-left: 20px;
+        background-position: 0 0;
+        background-repeat: no-repeat; }
+      shots .shot-container .status li .likes {
+        background-image: url("../imgs/fav-icon.png"); }
+      shots .shot-container .status li .comments {
+        background-image: url("../imgs/comment-icon.png"); }
+      shots .shot-container .status li .views {
+        background-image: url("../imgs/views-icon.png"); }
+
 @font-face {
-  font-family: 'UniversLTStd47LightCondensed';
+  font-family: "UniversLTStd47LightCondensed";
   src: url("../fonts/universltstd-lightcn-webfont.svg"); }
+html {
+  height: 100%; }
 
 body {
+  height: 100%;
   font-family: "UniversLTStd47LightCondensed", Helvetica, Arial, sans-serif;
-  background: rgba(47, 47, 47, 0.98);
+  background: #f4f4f4;
   color: #ffffff; }
+  body .row-centered {
+    text-align: center; }
+
+/*# sourceMappingURL=base.css.map */

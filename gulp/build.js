@@ -48,12 +48,17 @@ var wireBuildDepOptions = {
 };
 
 // Building tasks
-gulp.task('dist-angular-js', function () {
-    return gulp.src([sourceAppDir + '**/*.module.js',
-            sourceAppDir + '**/*.controller.js'])
+gulp.task('uglify-angular-app', function () {
+    return gulp.src(sourceAppDir + '**/*.js')
+        .pipe(angularFileSort())
         .pipe(concat(buildDir))
         .pipe(rename('dribbble.viewer.min.js'))
         .pipe(uglify())
+        .pipe(gulp.dest(buildAppDir));
+});
+
+gulp.task('dist-html', function () {
+    return gulp.src(sourceAppDir + '**/*.html')
         .pipe(gulp.dest(buildAppDir));
 });
 
@@ -69,7 +74,7 @@ gulp.task('dist-base-css', function () {
         .pipe(gulp.dest(buildCSSDir));
 });
 
-gulp.task('dist', ['lint', 'styles', 'dist-angular-js', 'dist-js', 'dist-base-css'], function () {
+gulp.task('dist', ['lint', 'styles', 'uglify-angular-app', 'dist-html', 'dist-js', 'dist-base-css'], function () {
     gulp.src(sourceFontsDir + '**/*')
         .pipe(gulp.dest(buildFontsDir));
     gulp.src(sourceImgsDir + '**/*')

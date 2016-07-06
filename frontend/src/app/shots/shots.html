@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row row-centered">
+        <div class="col-sm-12" infinite-scroll='loadMoreShots()' infinite-scroll-distance='2'>
+            <div ng-repeat="shot in shotsData">
+                <div class="shot-container">
+                    <div class="shot">
+                        <img ng-src="{{ shot.images.normal }}">
+                    </div>
+                    <ul class="status">
+                        <li>
+                            <span class="icon-container likes"></span><span class="count">{{ shot.likes_count }}</span>
+                        </li>
+                        <li>
+                            <span class="icon-container comments"></span><span class="count">{{ shot.comments_count }}</span>
+                        </li>
+                        <li>
+                            <span class="icon-container views"></span><span class="count">{{ shot.views_count }}</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
