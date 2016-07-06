@@ -8,7 +8,7 @@ header {
     header .title-container .title {
       margin: 10px 0px 10px 0; }
       header .title-container .title a {
-        color: #ffffff;
+        color: #fff;
         font-size: 30px;
         letter-spacing: 0cm;
         font-weight: bold;
@@ -16,6 +16,7 @@ header {
 
 shots .container {
   padding-top: 65px; }
+
 shots .shot-container {
   padding: 10px;
   margin-bottom: 15px;
@@ -23,10 +24,13 @@ shots .shot-container {
   display: inline-block;
   border-radius: 2px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07); }
-  shots .shot-container .shot img {
-    max-width: 100%; }
+  shots .shot-container .shot {
+    cursor: pointer; }
+    shots .shot-container .shot img {
+      max-width: 100%; }
   shots .shot-container .status {
-    margin-top: 10px; }
+    margin: 10px 0px 15px 0px;
+    height: 15px; }
     shots .shot-container .status li {
       float: right;
       width: auto;
@@ -48,9 +52,39 @@ shots .shot-container {
       shots .shot-container .status li .views {
         background-image: url("../imgs/views-icon.png"); }
 
+shots .details-container {
+  max-width: 400px;
+  color: #555;
+  font-size: 16px;
+  padding: 20px 10px 10px 10px;
+  border-top: 1px solid #ddd; }
+  shots .details-container p {
+    margin: 0; }
+  shots .details-container .header-container {
+    position: relative;
+    padding-left: 60px;
+    min-height: 48px;
+    text-align: left; }
+    shots .details-container .header-container .avatar-container {
+      position: absolute;
+      top: 0;
+      left: 0; }
+      shots .details-container .header-container .avatar-container img {
+        width: 48px;
+        max-height: 48px;
+        border-radius: 50%; }
+      shots .details-container .header-container .avatar-container img:hover {
+        opacity: 0.70; }
+    shots .details-container .header-container .header-info-container .title {
+      margin: 0px; }
+  shots .details-container .description-container {
+    text-align: justify;
+    padding: 15px 0px 0px 0px; }
+
 @font-face {
-  font-family: "UniversLTStd47LightCondensed";
+  font-family: 'UniversLTStd47LightCondensed';
   src: url("../fonts/universltstd-lightcn-webfont.svg"); }
+
 html {
   height: 100%; }
 
@@ -58,8 +92,6 @@ body {
   height: 100%;
   font-family: "UniversLTStd47LightCondensed", Helvetica, Arial, sans-serif;
   background: #f4f4f4;
-  color: #ffffff; }
+  color: #fff; }
   body .row-centered {
     text-align: center; }
-
-/*# sourceMappingURL=base.css.map */

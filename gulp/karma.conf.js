@@ -9,6 +9,7 @@ module.exports = function(config) {
             'frontend/src/bower_components/**/dist/jquery.js',
             'frontend/src/bower_components/**/angular.js',
             'frontend/src/bower_components/**/ng-infinite-scroll.js',
+            'frontend/src/bower_components/**/angular-sanitize.js',
             'frontend/src/app/**/*.module.js',
             'frontend/src/app/**/*.directive.js',
             'frontend/src/app/**/*.controller.js',

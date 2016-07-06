@@ -3,20 +3,41 @@
         <div class="col-sm-12" infinite-scroll='loadMoreShots()' infinite-scroll-distance='2'>
             <div ng-repeat="shot in shotsData">
                 <div class="shot-container">
-                    <div class="shot">
+                    <div class="shot" ng-click="isShotDetailsExpanded = !isShotDetailsExpanded">
                         <img ng-src="{{ shot.images.normal }}">
                     </div>
                     <ul class="status">
                         <li>
-                            <span class="icon-container likes"></span><span class="count">{{ shot.likes_count }}</span>
+                            <span class="icon-container likes"></span><span
+                                class="count">{{ shot.likes_count }}</span>
                         </li>
                         <li>
-                            <span class="icon-container comments"></span><span class="count">{{ shot.comments_count }}</span>
+                            <span class="icon-container comments"></span><span
+                                class="count">{{ shot.comments_count }}</span>
                         </li>
                         <li>
-                            <span class="icon-container views"></span><span class="count">{{ shot.views_count }}</span>
+                            <span class="icon-container views"></span><span
+                                class="count">{{ shot.views_count }}</span>
                         </li>
                     </ul>
+                    <div class="details-container" ng-show="isShotDetailsExpanded">
+                        <div class="header-container">
+                            <a class="avatar-container" href="{{ shot.user.html_url }}" target="_blank"
+                               title="{{ shot.user.name }}">
+                                <img ng-src="{{ shot.user.avatar_url }}">
+                            </a>
+                            <div class="header-info-container">
+                                <h2 class="title">{{ shot.title }}</h2>
+                                <h4 class="title">
+                                    <span> by <a href="{{ shot.user.html_url }}" target="_blank">{{ shot.user.name
+                                        }}</a> on {{ shot.created_at | date:'yyyy-MM-dd'}}
+                                    </span>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="description-container" ng-bind-html="shot.description">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
