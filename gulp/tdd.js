@@ -2,7 +2,7 @@ var gulp = require('gulp');
 var jasmine = require('gulp-jasmine');
 var karmaServer = require('karma').Server;
 var jshint = require('gulp-jshint');
-var sourceAppDir = 'frontend/src/app/';
+var sourceAppDir = 'frontend/src/app/**/*.js';
 
 // Testing tasks
 function _createKarmaServer(callback, isSingleRun) {

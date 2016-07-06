@@ -1,0 +1,17 @@
+// _util.sass
+
+=border-radius($radius)
+  -webkit-border-radius: $radius
+  -moz-border-radius:    $radius
+  -ms-border-radius:     $radius
+  border-radius:         $radius
+
+=box-shadow($h-offset, $v-offset, $blur-radius, $color)
+  -webkit-box-shadow: $h-offset $v-offset $blur-radius $color
+  -moz-box-shadow:    $h-offset $v-offset $blur-radius $color
+  box-shadow:         $h-offset $v-offset $blur-radius $color
+
+=opacity($value)
+  -moz-opacity: $value
+  -khtml-opacity: $value
+  opacity: $value

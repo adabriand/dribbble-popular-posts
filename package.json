@@ -1,7 +1,7 @@
 {
-  "name": "dribbble-popular-posts",
+  "name": "dribbble-popular-shots",
   "version": "0.0.1",
-  "description": "An alternative viewer for the popular shots on Dribbble.",
+  "description": "An responsive viewer for the popular shots on Dribbble.",
   "main": "index.js",
   "scripts": {
     "postinstall": "bower install && gulp dist",
@@ -31,7 +31,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/adabriand/dribbble-popular-posts"
+    "url": "https://github.com/adabriand/dribbble-popular-shots"
   },
   "devDependencies": {
     "jasmine-core": "~2.4.1",

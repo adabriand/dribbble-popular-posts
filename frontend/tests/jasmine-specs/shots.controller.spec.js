@@ -28,7 +28,10 @@
 
         it('should call getShotsData on loadMoreShots', function () {
             $controller('shotsCtrl', {$scope: $scope, shotsService: $shotsService});
-            spyOn($shotsService, "getShotsData").and.returnValue({ then : function(){}});
+            spyOn($shotsService, "getShotsData").and.returnValue({
+                then: function () {
+                }
+            });
             $scope.loadMoreShots();
             expect($shotsService.getShotsData).toHaveBeenCalledWith(1);
             expect($scope.isLoadingData).toBe(true);
@@ -39,9 +42,11 @@
         it('should update shotsData after loadMoreShots', function () {
             var testData = [{"id": 1}];
             $controller('shotsCtrl', {$scope: $scope, shotsService: $shotsService});
-            spyOn($shotsService, "getShotsData").and.returnValue({ then : function(callback) {
-                callback(testData);
-            }});
+            spyOn($shotsService, "getShotsData").and.returnValue({
+                then: function (callback) {
+                    callback(testData);
+                }
+            });
             spyOn($shotsService, "mergeShotsData").and.callFake(function (shotsData, newData) {
                 return newData;
             });

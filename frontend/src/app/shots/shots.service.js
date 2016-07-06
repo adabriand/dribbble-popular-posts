@@ -23,7 +23,6 @@
                 var requestUrl = RECENT_SHOTS_API_URL + '&page=' + pageNumber;
                 return $http.get(requestUrl)
                     .then(function (response) {
-                        console.log(response);
                         return response.data;
                     });
             },

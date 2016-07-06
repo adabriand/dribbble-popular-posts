@@ -1,4 +1,5 @@
 // _shots.sass
+@import '_util'
 
 shots
   .container
@@ -8,8 +9,8 @@ shots
     margin-bottom: 15px
     background: #fff
     display: inline-block
-    border-radius: 2px
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07)
+    +border-radius(2px)
+    +box-shadow(0px, 1px, 2px, rgba(0, 0, 0, 0.07))
     .shot
       cursor: pointer
       img
@@ -57,15 +58,12 @@ shots
         img
           width: 48px
           max-height: 48px
-          border-radius: 50%
+          +border-radius(50%)
         img:hover
-          opacity: 0.70
+          +opacity(0.70)
       .header-info-container
         .title
-          margin: 0px
+          margin: 0
     .description-container
       text-align: justify
       padding: 15px 0px 0px 0px
-
-
-

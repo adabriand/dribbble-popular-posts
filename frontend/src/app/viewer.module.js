@@ -1,5 +1,5 @@
 (function () {
     'use strict';
 
-    angular.module('viewer', ['viewer.shots', 'viewer.header', 'infinite-scroll', 'ngSanitize']);
+    angular.module('viewer', ['viewer.shots', 'viewer.header', 'viewer.about', 'infinite-scroll', 'ngSanitize']);
 }());

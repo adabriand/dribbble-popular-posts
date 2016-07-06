@@ -3,7 +3,7 @@ Status](https://travis-ci.org/adabriand/dribbble-popular-shots.svg?branch=master
 Dribbble Popular Shots
 ==============================
 
-[Dribbble Popular Shots](https://db-popular-shots.herokuapp.com/) is a web application that allows users to view the most popular shots on Dribbble.
+[Dribbble Popular Shots](https://db-popular-shots.herokuapp.com/) is a responsive web application that allows users to view the most popular shots on Dribbble.
 
 Requirements
 ------------------------------
