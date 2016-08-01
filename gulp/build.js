@@ -52,7 +52,7 @@ gulp.task('uglify-angular-app', function () {
     return gulp.src(sourceAppDir + '**/*.js')
         .pipe(angularFileSort())
         .pipe(concat(buildDir))
-        .pipe(rename('dribbble.viewer.min.js'))
+        .pipe(rename('viewer.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest(buildAppDir));
 });
